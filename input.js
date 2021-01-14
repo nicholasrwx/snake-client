@@ -18,7 +18,15 @@ const handleUserInput = function (key) {
     return connection.write("Move: down");
   } else if (key === "\u0064") {
     return connection.write("Move: right");
-  } else return undefined;
+  } else if (key === "\u007A") {
+    return connection.write("Say: ow");
+  } else if (key === "\u0078") {
+    return connection.write("Say: oop");
+  } else if (key === "\u0063") {
+    return connection.write("Say: wee");
+  } else if (key === "\u0076") {
+    return connection.write("Say: wooshkies");
+  } else undefined;
 };
 
 //setupInput is passed connection() from play.js
