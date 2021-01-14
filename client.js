@@ -15,7 +15,20 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Connection Successful");
     conn.write('Name: NIK')
-  });
+   
+    })
+    
+  
+  conn.on('connect', () => {
+ //     setInterval(() => conn.write('Move: up'), 1000);
+ //     setInterval(() => conn.write('Move: left'), 4000);
+ //     setInterval(() => conn.write('Move: right'), 6000);
+
+  
+    });
+
+
+
 
   //data from server
   conn.on("data", (data) => {
